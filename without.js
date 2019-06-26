@@ -17,7 +17,7 @@ const assertEqual = function(actual, expected) {
       console.log(`😂😂😂 Assertion failed: ${actual}  !==  ${expected}`);
     }
   };
-  
+
 
 const eqArrays = function(arr1, arr2) {
     if (arr1.length !== arr2.length) {
@@ -34,5 +34,5 @@ const assertArrayEqual = function(arr1, arr2) {
     assertEqual(eqArrays(arr1,arr2), true)
 }
 
-console.log(without([1, 2, 3], [1])) // => [2, 3]
+console.log(without([1, 2, 3,4,5,6,7,8,9,0], [1,3,5,7,9])) // => [2, 3]
 console.log(without(["1", "2", "3"], [1, 2, "3"]))
